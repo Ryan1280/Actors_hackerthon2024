@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 화면</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #E7E7F9;
+        }
+
+        .main-container {
+            position: relative;
+            width: 100%;
+            max-width: 414px;
+            height: 100vh;
+            background-image: url('img/Main.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+        .transparent-box {
+            position: absolute;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        .check-icon {
+          background-color: white;
+            width: 6%;
+            height: 4%;
+        }
+
+        .check-icon1 {
+            top: 19.5%;
+            right: 21%;
+        }
+
+        .check-icon2 {
+            top: 28%;
+            right: 21%;
+        }
+
+        /* "2 more" 버튼 */
+        .more-button {
+            top: 34.2%;
+            left: 13%;
+            width: 70%;
+            height: 4%;
+        }
+
+        .cahractor {
+            top: 71%;
+            left: 35%;
+            width: 30%;
+            height: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container" id="mainScreen">
+        <!-- 체크 아이콘 1 -->
+        <img src="img/Group 112.svg" class="transparent-box check-icon check-icon1" onclick="toggleCheck(this)" id="check1">
+        
+        <!-- 체크 아이콘 2 -->
+        <img src="img/Group 112.svg" class="transparent-box check-icon check-icon2" onclick="toggleCheck(this)" id="check2">
+
+        <!-- "2 more" 버튼 -->
+        <div class="transparent-box more-button" onclick="changeBackground()"></div>
+
+        <div class="transparent-box cahractor" onclick="location.href='app.html'"></div>
+    </div>
+
+    <script>
+        // 체크 아이콘 클릭 시 이미지 변경
+        function toggleCheck(element) {
+            if (element.src.includes('Group 112.svg')) {
+                element.src = 'img/Group 112.svg'; // 보라색 아이콘으로 변경
+            } else {
+                element.src = 'img/Group 1.svg'; // 원래 아이콘으로 변경
+            }
+            
+        }
+
+        // 배경 이미지 변경
+        function changeBackground() {
+            const mainScreen = document.getElementById('mainScreen');
+            mainScreen.style.backgroundImage = "url('img/Main.png')";
+        }
+    </script>
+</body>
+</html>

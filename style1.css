@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E7E7F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 20px 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+  width: 150px;
+  height: 15px;
+  position: relative;
+}
+
+.progress {
+  background-color: #a7b0ff;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.progress-text {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  font-size: 0.8em;
+  color: white;
+}
+
+.menu-icon {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.date {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.quests {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.quest {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.daily {
+  border-left: 5px solid #a7b0ff;
+}
+
+.mid-term {
+  border-left: 5px solid #7fd1ae;
+}
+
+.check {
+  color: #7fd1ae;
+  font-size: 1.5em;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  color: #a7b0ff;
+  cursor: pointer;
+}
+
+.news {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.news h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.news-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+  color: #7fd1ae;
+}
+
+.quote {
+  background-color: #dfe7ff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 90%;
+  text-align: center;
+  font-style: italic;
+}
+
+.character-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.character {
+  width: 150px;
+}
+
+.streak {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #7fd1ae;
+}
+
+.bottom-nav {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}

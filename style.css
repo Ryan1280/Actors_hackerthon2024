@@ -1,0 +1,126 @@
+body {
+  background: #e7e9f6;
+}
+
+.header_main {
+  display: flex;
+  justify-content: center;
+}
+
+.progress_bar {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: white;
+  border-radius: 630px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.detail_bar {
+  display: flex;
+  padding: 17px 13px;
+  align-items: flex-end;
+  gap: 10px;
+  background-color: white;
+  margin-left: 15px;
+  border-radius: 630px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.purple_progress {
+  height: 100%;
+  width: 87%;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 630px;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(105, 65, 198, 0.2) 100%
+    ),
+    #f1eaff;
+  text-align: end;
+  color: #6941c6;
+  font-family: Sansation;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+.percent_text {
+  opacity: 0.3;
+  margin-top: 13.5px;
+  margin-right: 25px;
+}
+
+.moreicon {
+  stroke-width: 2px;
+  stroke: var(--_Brand-700, #6941c6);
+  width: 23.33px;
+  height: 16.468px;
+}
+
+.rightfloat {
+  display: flex;
+  float: left;
+  margin-left: 0.6em;
+}
+
+.name {
+  margin-top: 4px;
+  margin-left: 1.5rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.peopleicon {
+  margin-top: 7px;
+  width: 30px;
+}
+
+.peopleiconimg {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 100%;
+  padding: 3px;
+}
+
+.date {
+  color: #000;
+  font-family: Sansation;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-top: 0.5rem;
+}
+
+.quests{
+  width: 95%;
+  margin: 0 auto;
+}
+.contents{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.quest{
+  background-color: white;
+  width: 90%;
+  margin-top: 0.3rem;
+  border-radius:20px;
+}
+.content{
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.issuccess{
+  justify-content: end;
+}
