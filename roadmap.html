@@ -26,7 +26,7 @@
             width: 100%;
             max-width: 414px;
             height: 100vh;
-            background-image: url('img/Main.svg');
+            background-image: url('img/Roadmap.png');
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -37,12 +37,6 @@
             position: absolute;
             cursor: pointer;
             background-color: rgba(255, 255, 255, 0);
-        }
-
-        .check-icon {
-          background-color: white;
-            width: 6%;
-            height: 4%;
         }
 
         .check-icon1 {
@@ -64,42 +58,51 @@
         }
 
         .cahractor {
-            top: 71%;
-            left: 35%;
-            width: 30%;
-            height: 20%;
-        }
-
-        .roadmap {
-            top: 94%;
-            left: 68%;
-            width: 7%;
-            height: 4%;
-        }
-
-        .home {
-            top: 94%;
+            top: 93%;
             left: 47%;
             width: 7%;
             height: 4%;
         }
+
+        .roadmaobtn{
+            top: 54%;
+            left: 39%;
+            width: 7%;
+            height: 4%;
+        }
+
+        .roadmaobtn1{
+            top: 30%;
+            left: 55%;
+            width: 7%;
+            height: 4%;
+        }
+
+        .roadmaobtn2{
+            top: 45%;
+            left: 65%;
+            width: 7%;
+            height: 4%;
+        }
+
     </style>
 </head>
 <body>
     <div class="main-container" id="mainScreen">
         <!-- 체크 아이콘 1 -->
-        <img src="img/Group 112.svg" class="transparent-box check-icon check-icon1" onclick="toggleCheck(this)" id="check1">
         
         <!-- 체크 아이콘 2 -->
-        <img src="img/Group 112.svg" class="transparent-box check-icon check-icon2" onclick="toggleCheck(this)" id="check2">
-
+        
         <!-- "2 more" 버튼 -->
         <div class="transparent-box more-button" onclick="changeBackground()"></div>
 
-        <div class="transparent-box cahractor" onclick="location.href='app.html'"></div>
-        <div class="transparent-box home" onclick="location.href='index.html'"></div>
-        <div class="transparent-box roadmap" onclick="location.href='roadmap.html'"></div>
+        <div class="transparent-box roadmaobtn" onclick="Roadmapp()"></div>
 
+        <div class="transparent-box roadmaobtn1" onclick="Roadmapp()"></div>
+
+        <div class="transparent-box roadmaobtn2" onclick="Roadmapp()"></div>
+
+        <div class="transparent-box cahractor" onclick="location.href='index.html'"></div>
     </div>
 
     <script>
@@ -117,6 +120,10 @@
         function changeBackground() {
             const mainScreen = document.getElementById('mainScreen');
             mainScreen.style.backgroundImage = "url('img/Main.png')";
+        }
+
+        function Roadmapp() {
+            alert("로드맵 발전단계")
         }
     </script>
 </body>
